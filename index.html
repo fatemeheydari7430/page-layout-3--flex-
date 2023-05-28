@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .img-res {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      ul.nav {
+        display: flex;
+        height: 60px;
+        align-items: center;
+      }
+      ul.nav li {
+        margin-right: 15px;
+        font-size: 16px;
+      }
+
+      header {
+        display: flex;
+        max-height: 800px;
+        position: relative;
+      }
+      header h1 {
+        position: absolute;
+        align-self: center;
+        margin-right: 30px;
+        background-color: #000;
+        color: #efefef;
+      }
+
+      .container {
+        max-width: 1200px;
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+      }
+      .container aside {
+        flex: 25%;
+      }
+      .container main {
+        flex: 75%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .container main > div {
+        /* width: 50%; */
+        flex: 50%;
+        /* flex-basis: 200px; */
+        padding: 0 10px;
+        margin-bottom: 15px;
+      }
+      .container main div p {
+        font-size: 16px;
+      }
+
+      aside > div {
+        background-color: #efefef;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      aside div p {
+        border-bottom: 1px solid rgb(224, 224, 224);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        color: #fff;
+      }
+
+      @media screen and (max-width:978px){
+        .container{
+          flex-direction: column;
+        }
+        .container main > div{
+          width: 100%;
+          flex: 100%;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <nav class="gray">
+      <ul class="nav">
+        <li><a href="">خانه</a></li>
+        <li><a href="">دوره های آموزشی</a></li>
+        <li><a href="">درباره ما</a></li>
+        <li><a href="">تماس با ما</a></li>
+      </ul>
+    </nav>
+
+
+    <header class="black">
+      <h1>کسب مهارت و شروع تجربه های تازه</h1>
+      <img class="img-res" src="./assets/img/Feature-Home-Office.jpg" alt="" />
+    </header>
+
+
+    <section class="container">
+
+      <aside>
+        <div>
+          <p>جدیدترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+            <li><a href="">مطلب 5</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>محبوب ترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+            <li><a href="">مطلب 5</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>جدیدترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+            <li><a href="">مطلب 5</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <div>
+          <img class="img-res" src="./assets/img/front.jpg" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="./assets/img/php.jpg" alt="" />
+          <p>دوره php</p>
+        </div>
+        <div>
+          <img class="img-res" src="./assets/img/laravel.jpg" alt="" />
+          <p>دوره laravel</p>
+        </div>
+        <div>
+          <img class="img-res" src="./assets/img/js.png" alt="" />
+          <p>دوره js</p>
+        </div>
+        <div>
+          <img class="img-res" src="./assets/img/UL.png" alt="" />
+          <p>دوره ul</p>
+        </div>
+        <div>
+          <img class="img-res" src="./assets/img/wordpress.jpg" alt="" />
+          <p>دوره wordpress</p>
+        </div>
+      </main>
+
+    </section>
+
+
+    <footer class="purple">
+      <p>تمامی حقوق محفوظ می باشد</p>
+    </footer>
+
+  </body>
+</html>
